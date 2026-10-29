@@ -36,7 +36,7 @@ jobs:
           echo "RELEASE_NAME=$release_name" >> $GITHUB_ENV
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@master
+        uses: softprops/action-gh-release@v3.0.3
         with:
           tag_name: DockerTarBuilder-ARM64
           name: ${{ env.RELEASE_NAME }} for ARM64
